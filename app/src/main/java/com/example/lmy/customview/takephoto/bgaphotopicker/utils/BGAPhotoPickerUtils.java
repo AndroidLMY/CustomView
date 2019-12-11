@@ -1,4 +1,4 @@
-package com.example.lmy.customview.BGAPhotoPicker.utils;
+package com.example.lmy.customview.takephoto.bgaphotopicker.utils;
 
 import android.Manifest;
 import android.app.Activity;

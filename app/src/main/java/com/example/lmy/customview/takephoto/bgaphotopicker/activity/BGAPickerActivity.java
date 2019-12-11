@@ -1,4 +1,4 @@
-package com.example.lmy.customview.BGAPhotoPicker.activity;
+package com.example.lmy.customview.takephoto.bgaphotopicker.activity;
 
 
 import android.content.Context;
@@ -13,7 +13,7 @@ import android.widget.Toast;
 import com.androidlmy.headcustomview.HeadCustomView;
 import com.androidlmy.headcustomview.OnClickHeadView;
 import com.bumptech.glide.Glide;
-import com.example.lmy.customview.BGAPhotoPicker.utils.BGAPhotoPickerUtils;
+import com.example.lmy.customview.takephoto.bgaphotopicker.utils.BGAPhotoPickerUtils;
 import com.example.lmy.customview.R;
 import com.example.lmy.customview.base.BaseActivity;
 

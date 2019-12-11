@@ -82,4 +82,9 @@ dependencies {
     implementation 'io.reactivex.rxjava2:rxandroid:2.1.0'
     /** *******************************网络请求  **************************************/
     implementation files('libs/tbs_sdk_v3.6.0.1310.jar')
+
+    //圆形化处理
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+    //图片选择框架
+    implementation 'org.devio.takephoto:takephoto_library:4.1.0'
 }

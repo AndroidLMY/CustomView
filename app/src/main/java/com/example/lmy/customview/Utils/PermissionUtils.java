@@ -1,79 +1,63 @@
 package com.example.lmy.customview.Utils;
 
-import android.app.Activity;
-import androidx.annotation.NonNull;
-import android.widget.Toast;
+import android.Manifest;
 
+import java.util.HashMap;
 import java.util.List;
-
-import pub.devrel.easypermissions.AfterPermissionGranted;
-import pub.devrel.easypermissions.AppSettingsDialog;
-import pub.devrel.easypermissions.EasyPermissions;
+import java.util.Map;
 
 /**
- * @功能:权限管理工具类
- * @Creat 2019/03/08 15:20
+ * @功能:存放app所有权限组
+ * @Creat 2019/07/16 18:04
  * @User Lmy
  * @By Android Studio
  */
-public class PermissionUtils implements EasyPermissions.PermissionCallbacks, EasyPermissions.RationaleCallbacks {
-    private static final int RC_CAMERA_AND_LOCATION = 100;
-    private Activity mactivity;
+public class PermissionUtils {
+    public static Map<String, String> PermissionMap = new HashMap<>();
+    /*******************************app所有权限组**********************************/
+    //日历
+    public static final String CALENDAR = Manifest.permission.READ_CALENDAR;
+    //相机
+    public static final String CAMERA = Manifest.permission.CAMERA;
+    //联系人
+    public static final String CONTACTS = Manifest.permission.READ_CONTACTS;
+    //定位
+    public static final String LOCATION = Manifest.permission.ACCESS_FINE_LOCATION;
+    //麦克风
+    public static final String MICROPHONE = Manifest.permission.RECORD_AUDIO;
+    //手机
+    public static final String PHONE = Manifest.permission.READ_PHONE_STATE;
+    //传感器
+    public static final String SENSORS = Manifest.permission.BODY_SENSORS;
+    //短信
+    public static final String SMS = Manifest.permission.SEND_SMS;
+    //读写
+    public static final String STORAGE = Manifest.permission.READ_EXTERNAL_STORAGE;
 
-    private static PermissionUtils permissionUtils;
-
-    public static PermissionUtils getInstance() {
-        if (permissionUtils == null) {
-            permissionUtils = new PermissionUtils();
+    public static void init() {
+        PermissionMap.put(Manifest.permission.READ_CALENDAR, "读取日历");
+        PermissionMap.put(Manifest.permission.CAMERA, "拍照和录像");
+        PermissionMap.put(Manifest.permission.READ_CONTACTS, "联系人");
+        PermissionMap.put(Manifest.permission.ACCESS_FINE_LOCATION, "获取定位");
+        PermissionMap.put(Manifest.permission.RECORD_AUDIO, "录音");
+        PermissionMap.put(Manifest.permission.READ_PHONE_STATE, "手机");
+        PermissionMap.put(Manifest.permission.BODY_SENSORS, "传感器");
+        PermissionMap.put(Manifest.permission.SEND_SMS, "信息");
+        PermissionMap.put(Manifest.permission.READ_EXTERNAL_STORAGE, "读写手机存储");
+    }
+    public static String GetPermission(List<String> parms) {
+        String PermissionString = "";
+        for (int i = 0; i < parms.size(); i++) {
+            PermissionString = PermissionString + "\n" + PermissionMap.get(parms.get(i));
         }
-        return permissionUtils;
+        return PermissionString;
     }
 
-    @AfterPermissionGranted(RC_CAMERA_AND_LOCATION)
-    public void methodRequiresTwoPermission(Activity activity, String[] perms) {
-        this.mactivity = activity;
-        if (EasyPermissions.hasPermissions(activity, perms)) {
-            Toast.makeText(activity, "已经授权", Toast.LENGTH_SHORT).show();
-        } else {
-            // Do not have permissions, request them now
-            EasyPermissions.requestPermissions(activity, "软件运行需要相关权限",
-                    RC_CAMERA_AND_LOCATION, perms);
+    public static String GetPermission(String[] perms) {
+        String PermissionString = "";
+        for (int i = 0; i < perms.length; i++) {
+            PermissionString = PermissionString + "\n" + PermissionMap.get(perms[i]);
         }
+        return PermissionString;
     }
-
-    @Override
-    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
-        EasyPermissions.onRequestPermissionsResult(requestCode, permissions, grantResults, this);
-    }
-
-    @Override
-    public void onPermissionsGranted(int requestCode, List<String> perms) {
-
-        //  Check if at least one permission in the list of denied permissions has been permanently
-        //  denied (user clicked "Never ask again").
-        // This will display a dialog directing them to enable the permission in app settings.
-        //如果用户点击永远禁止，这个时候就需要跳到系统设置页面去手动打开了
-        if (EasyPermissions.somePermissionPermanentlyDenied(mactivity, perms)) {
-            new AppSettingsDialog.Builder(mactivity).build().show();
-        }
-
-    }
-
-    @Override
-    public void onPermissionsDenied(int requestCode, List<String> perms) {
-        Toast.makeText(mactivity, perms.toString(), Toast.LENGTH_SHORT).show();
-    }
-
-
-    @Override
-    public void onRationaleAccepted(int requestCode) {
-
-    }
-
-    @Override
-    public void onRationaleDenied(int requestCode) {
-
-    }
-
-
 }

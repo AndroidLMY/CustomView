@@ -2,18 +2,32 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.lmy.customview">
     <!-- 日历 -->
-    <uses-permission android:name="android.permission.READ_CALENDAR" /> <!-- 相机 -->
-    <uses-permission android:name="android.permission.CAMERA" /> <!-- 手机 打电话之类 -->
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <!-- 相机 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- 手机 打电话之类 -->
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
-    <uses-permission android:name="android.permission.CALL_PHONE" /> <!-- 位置 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <!-- 位置 -->
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> <!-- 存储权限 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 传感器 -->
+    <uses-permission android:name="android.permission.BODY_SENSORS" />
+    <!-- 联系人 -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <!-- 信息 -->
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <!-- 录音 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <!-- 读写存储 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- 正常权限 -->
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- 允许程序获取网络信息状态，如当前的网络连接是否有效 -->
-    <uses-permission android:name="android.permission.INTERNET" /> <!-- 允许程序访问网络连接，可能产生GPRS流量 -->
+    <!-- 允许程序获取网络信息状态，如当前的网络连接是否有效 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 允许程序访问网络连接，可能产生GPRS流量 -->
+    <uses-permission android:name="android.permission.INTERNET" />
     <!-- 因为8.0添加了新的安全措施，不允许应用内安装未经过Google play验证的应用,但是又有更新应用的需求 -->
-    <uses-permission android:name="android.permission.REPLACE_EXISTING_PACKAGE" /> <!-- 正常权限 -->
+    <uses-permission android:name="android.permission.REPLACE_EXISTING_PACKAGE" />
     <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
 
     <application
@@ -21,24 +35,24 @@
         android:hardwareAccelerated="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:name=".app"
         android:largeHeap="true"
         android:networkSecurityConfig="@xml/network_security_config"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MPChart.Activity.CombinationActivity"></activity>
+        <activity android:name=".takephoto.TakePhotoMainActivity"></activity>
+        <activity android:name=".takephoto.takephoto.TakeActivity" />
+        <activity android:name=".MPChart.Activity.CombinationActivity" />
         <activity android:name=".MPChart.Activity.RecyclerViewHeapActivity" />
         <activity android:name=".MPChart.Activity.HeapUpBarchartActivity" />
         <activity android:name=".MPChart.Activity.CrosswiseActivity" />
+
         <service android:name=".service.DownloadService" />
 
-        <activity
-            android:name=".wecome.AdvertisingActivity"
-            />
+        <activity android:name=".wecome.AdvertisingActivity" />
         <activity android:name=".WebView.WebActivity" />
+        <activity android:name=".wecome.GuideActivity" />
 
-        <activity
-            android:name=".wecome.GuideActivity"
-            />
         <provider
             android:name="androidx.core.content.FileProvider"
             android:authorities="com.example.lmy.customview.fileprovider"
@@ -62,9 +76,6 @@
         <activity android:name=".Activity.MainActivity" /> <!-- recyclerview增加头部测试 -->
         <activity android:name=".RecyclerViewAddTitle.activity.RecyclerViewActivity" /> <!-- recyclerview多选删除测试 -->
         <activity android:name=".CustomView.CustomviewActivity" />
-
-
-
         <activity
             android:name=".Activity.StartLaunchActivity"
             android:theme="@style/ThemeSplash">
@@ -74,9 +85,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".BGAPhotoPicker.activity.BGAPickerActivity" />
-        <activity android:name=".BGAPhotoPicker.activity.BGANinePhotoActivity" />
-
+        <activity android:name=".takephoto.bgaphotopicker.activity.BGAPickerActivity" />
+        <activity android:name=".takephoto.bgaphotopicker.activity.BGANinePhotoActivity" />
     </application>
 
 </manifest>
