@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+
+    <com.androidlmy.headcustomview.HeadCustomView
+        android:layout_width="match_parent"
+        android:id="@+id/title"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/Download"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimaryDarkTrans"
+        android:gravity="center"
+        android:text="Download"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+
+    <Button        android:id="@+id/Warning"
+
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimaryDarkTrans"
+        android:gravity="center"
+        android:text="Warning"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimaryDarkTrans"
+        android:gravity="center"
+        android:text="Error"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:id="@+id/Error"
+
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimaryDarkTrans"
+        android:gravity="center"
+        android:text="Info"
+        android:id="@+id/Info"
+
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimaryDarkTrans"
+        android:gravity="center"
+        android:text="Default"
+        android:id="@+id/Default"
+
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimaryDarkTrans"
+        android:gravity="center"
+        android:text="Confusion"
+        android:id="@+id/Confusion"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+</LinearLayout>

@@ -87,4 +87,7 @@ dependencies {
     implementation 'de.hdodenhof:circleimageview:2.2.0'
     //图片选择框架
     implementation 'org.devio.takephoto:takephoto_library:4.1.0'
+
+    implementation 'com.sdsmdg.tastytoast:tastytoast:0.1.1'
+
 }

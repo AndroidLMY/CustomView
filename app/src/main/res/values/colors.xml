@@ -12,6 +12,8 @@
     <color name="blue">#FF33A8FF</color>
 
 
+    <color name="color_success">#00FF00</color>
+    <color name="color_error">#FF0000</color>
 
     <color name="danlan">#D6EEFF</color>
 
@@ -64,5 +66,14 @@
     <color name="bga_pp_loading_progress_startColor">@android:color/white</color>
     <color name="bga_pp_loading_progress_centerColor">@color/colorPrimaryDark</color>
     <color name="bga_pp_loading_progress_endColor">@color/colorPrimaryDarkTrans</color>
+
+
+
+
+
+
+
+
+
     <!-- ========================== 自定义 PhotoPicker 颜色 END ========================== -->
 </resources>

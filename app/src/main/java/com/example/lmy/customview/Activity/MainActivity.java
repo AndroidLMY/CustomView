@@ -14,6 +14,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 
 import com.androidlmy.headcustomview.HeadCustomView;
+import com.example.lmy.customview.LoadToast.LoadToastActivity;
 import com.example.lmy.customview.Utils.LogUtil;
 import com.example.lmy.customview.Utils.PermissionUtils;
 import com.example.lmy.customview.takephoto.TakePhotoMainActivity;
@@ -28,6 +29,7 @@ import com.example.lmy.customview.RecyclerviewCheck.CheckActivity;
 import com.example.lmy.customview.SecondaryList.SecondaryListActivity;
 import com.example.lmy.customview.WebView.WebActivity;
 import com.example.lmy.customview.base.BaseActivity;
+import com.example.lmy.customview.toast.ToastKuActivity;
 import com.example.lmy.customview.updaapp.UpDataActivity;
 
 import java.io.File;
@@ -122,7 +124,14 @@ public class MainActivity extends BaseActivity implements EasyPermissions.Permis
                 .show();
     }
 
-    @OnClick({R.id.bt_view, R.id.bt_bga, R.id.bt_dialog, R.id.bt_recyclerview, R.id.bt_statistics, R.id.secondarylist_bt, R.id.check_recyclerview, R.id.viewpager_fragment, R.id.bt_excel, R.id.updata, R.id.webview})
+    @OnClick({R.id.bt_view, R.id.bt_bga, R.id.bt_dialog,
+            R.id.bt_recyclerview, R.id.bt_statistics,
+            R.id.secondarylist_bt, R.id.check_recyclerview,
+            R.id.viewpager_fragment, R.id.bt_excel,
+            R.id.updata, R.id.webview, R.id.laodtoase,
+            R.id.toast
+
+    })
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.bt_view:
@@ -157,6 +166,14 @@ public class MainActivity extends BaseActivity implements EasyPermissions.Permis
                 break;
             case R.id.webview:
                 WebActivity.show(this, "网页", "https://blog.csdn.net/ww897532167/article/details/74178449");
+                break;
+
+            case R.id.laodtoase:
+                LoadToastActivity.show(this);
+                break;
+
+            case R.id.toast:
+                ToastKuActivity.show(this);
                 break;
         }
     }

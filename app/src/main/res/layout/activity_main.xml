@@ -109,6 +109,25 @@
                 android:layout_margin="5dp"
                 android:background="@color/colorPrimaryDarkTrans"
                 android:text="WEBVIEW" />
+
+            <Button
+                android:id="@+id/laodtoase"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@color/colorPrimaryDarkTrans"
+                android:text="Toast加载" />
+
+            <Button
+                android:id="@+id/toast"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@color/colorPrimaryDarkTrans"
+                android:text="炫酷Toast" />
+
+
+
         </LinearLayout>
 
     </ScrollView>
