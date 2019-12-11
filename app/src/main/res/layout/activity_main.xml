@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.androidlmy.headcustomview.HeadCustomView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <Button
+                android:id="@+id/bt_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@color/colorPrimaryDarkTrans"
+                android:text="圆形TextView" />
+
+            <Button
+                android:id="@+id/bt_bga"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@color/colorPrimaryDarkTrans"
+                android:text="图片选择框架" />
+
+            <Button
+                android:id="@+id/bt_dialog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@color/colorPrimaryDarkTrans"
+                android:text="自定义的dialog" />
+
+            <Button
+                android:id="@+id/bt_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@color/colorPrimaryDarkTrans"
+                android:text="recyclerview增加头部和尾部" />
+
+            <Button
+                android:id="@+id/bt_statistics"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@color/colorPrimaryDarkTrans"
+                android:text="第三方统计view" />
+
+            <Button
+                android:id="@+id/secondarylist_bt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@color/colorPrimaryDarkTrans"
+                android:text="二级列表" />
+
+            <Button
+                android:id="@+id/check_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@color/colorPrimaryDarkTrans"
+                android:text="Recyclerview复选" />
+
+            <Button
+                android:id="@+id/viewpager_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@color/colorPrimaryDarkTrans"
+                android:text="viewpager+fragment" />
+
+            <Button
+                android:id="@+id/bt_excel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@color/colorPrimaryDarkTrans"
+                android:text="上下左右滑动View" />
+
+
+
+            <Button
+                android:id="@+id/updata"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@color/colorPrimaryDarkTrans"
+                android:text="UPDATA" />
+
+            <Button
+                android:id="@+id/webview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@color/colorPrimaryDarkTrans"
+                android:text="WEBVIEW" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

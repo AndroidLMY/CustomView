@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.androidlmy.headcustomview.HeadCustomView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:context=".MPChart.Activity.PieChartActivity">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:visibility="visible"
+                app:cardCornerRadius="10dp">
+
+                <com.github.mikephil.charting.charts.PieChart
+                    android:id="@+id/pic_chart1"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:visibility="visible"></com.github.mikephil.charting.charts.PieChart>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:visibility="visible"
+                app:cardCornerRadius="10dp">
+
+                <com.github.mikephil.charting.charts.PieChart
+                    android:id="@+id/pic_chart2"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:visibility="visible"></com.github.mikephil.charting.charts.PieChart>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:visibility="visible"
+                app:cardCornerRadius="10dp">
+
+                <com.github.mikephil.charting.charts.PieChart
+                    android:id="@+id/pic_chart3"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp" />
+            </androidx.cardview.widget.CardView>
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/pic_chart4"
+                android:layout_width="match_parent"
+                android:layout_height="300dp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

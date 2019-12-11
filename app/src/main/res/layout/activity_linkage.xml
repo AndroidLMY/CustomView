@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="10dp"
+    >
+
+    <LinearLayout
+        android:id="@+id/rootview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <com.androidlmy.headcustomview.HeadCustomView
+            android:layout_width="match_parent"
+            android:id="@+id/title"
+            android:layout_height="wrap_content"/>
+        <Spinner android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/spn"
+            android:dropDownWidth="200dp"/>
+
+        <Spinner android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/spn"
+            android:id="@+id/city"
+            android:dropDownWidth="200dp"/>
+        <Spinner android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/city"
+            android:id="@+id/counstryside"
+            android:dropDownWidth="200dp"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

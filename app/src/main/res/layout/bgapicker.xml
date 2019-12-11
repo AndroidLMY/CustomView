@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/MatchMatch"
+    android:clipChildren="false"
+    android:clipToPadding="false">
+
+    <LinearLayout
+        style="@style/MatchMatch.Vertical"
+        android:clipChildren="false"
+        android:clipToPadding="false">
+
+        <com.androidlmy.headcustomview.HeadCustomView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            style="@style/MatchWrap.Horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tv_moment_add_choice_photo"
+                style="@style/AutoWrapTv"
+                android:text="选择图片并设置到imageview中" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/MatchWrap.Horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tv_to"
+                style="@style/AutoWrapTv"
+                android:text="查看九宫格展示" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/MatchWrap.Horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tv_getfile"
+                style="@style/AutoWrapTv"
+                android:text="获得排序之后的file路径" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_show"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+
+        <cn.bingoogolapple.photopicker.widget.BGASortableNinePhotoLayout
+            android:id="@+id/snpl_moment_add_photos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            app:bga_snpl_deleteDrawable="@mipmap/bga_pp_ic_delete"
+            app:bga_snpl_deleteDrawableOverlapQuarter="false"
+            app:bga_snpl_editable="true"
+            app:bga_snpl_itemCornerRadius="0dp"
+            app:bga_snpl_itemSpanCount="3"
+            app:bga_snpl_itemWhiteSpacing="4dp"
+            app:bga_snpl_itemWidth="0dp"
+            app:bga_snpl_maxItemCount="9"
+            app:bga_snpl_otherWhiteSpacing="0dp"
+            app:bga_snpl_placeholderDrawable="@mipmap/bga_pp_ic_holder_light"
+            app:bga_snpl_plusDrawable="@mipmap/bga_pp_ic_plus"
+            app:bga_snpl_plusEnable="true"
+            app:bga_snpl_sortable="true" />
+    </LinearLayout>
+</ScrollView>

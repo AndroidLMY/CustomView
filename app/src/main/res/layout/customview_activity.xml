@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.androidlmy.headcustomview.HeadCustomView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.example.lmy.customview.CustomView.CircleTextView
+        android:id="@+id/textview"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="张"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:paintNormalColor="@color/colorPrimary" />
+
+    <com.example.lmy.customview.CustomView.CircleView
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:checked="false"
+        android:thumb="@drawable/selector_switch_thumb"
+        android:track="@drawable/selector_switch_track" />
+
+</LinearLayout>

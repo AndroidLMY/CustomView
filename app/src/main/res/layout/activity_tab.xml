@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FragmentViewPager.TabActivity">
+
+    <com.androidlmy.headcustomview.HeadCustomView
+        android:layout_width="match_parent"
+        android:id="@+id/title"
+        android:layout_height="wrap_content"/>
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/wite"
+        app:tabIndicatorColor="#FF0000"
+        app:tabIndicatorFullWidth="false"
+        app:tabIndicatorHeight="2dp"
+        app:tabMode="fixed"
+        app:tabSelectedTextColor="#FF0000"
+        app:tabTextColor="@color/black_333333" />
+
+    <com.example.lmy.customview.FragmentViewPager.CustomViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="adasd" />
+
+</LinearLayout>

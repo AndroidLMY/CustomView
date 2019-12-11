@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+
+    <com.androidlmy.headcustomview.HeadCustomView
+        android:layout_width="match_parent"
+        android:id="@+id/title"
+        android:layout_height="wrap_content"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MPChart.Activity.CrosswiseActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="20dp">
+
+            </LinearLayout>
+
+            <com.github.mikephil.charting.charts.HorizontalBarChart
+                android:id="@+id/chart1"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_above="@+id/seekBar1"
+                android:background="@android:color/white" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

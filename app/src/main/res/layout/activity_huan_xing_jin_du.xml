@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MPChart.Activity.CircleProgressActivity">
+
+    <com.androidlmy.headcustomview.HeadCustomView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.example.lmy.customview.MPChart.View.CircleProgress
+        android:id="@+id/cir_ad1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="200dp"
+        android:visibility="visible"
+        app:antiAlias="true"
+        app:arcColors="@color/colorAccent"
+        app:arcWidth="2dp"
+        app:bgArcColor="#EBEBEB"
+        app:bgArcWidth="2dp"
+        app:hint=""
+        app:hintSize="25sp"
+        app:maxValue="100"
+        app:startAngle="270"
+        app:sweepAngle="360"
+        app:unit=""
+        app:unitSize="25sp"
+        app:value="60"
+        app:valueSize="25sp" />
+
+
+</LinearLayout>

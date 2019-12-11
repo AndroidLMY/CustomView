@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/MatchMatch.Vertical">
+
+        <cn.bingoogolapple.photopicker.widget.BGANinePhotoLayout
+            android:id="@+id/npl_item_moment_photos"
+            style="@style/MatchWrap"
+            android:layout_marginTop="8dp"
+            app:bga_npl_itemCornerRadius="0dp"
+            app:bga_npl_itemSpanCount="3"
+            app:bga_npl_itemWhiteSpacing="4dp"
+            app:bga_npl_itemWidth="0dp"
+            app:bga_npl_otherWhiteSpacing="0dp"
+            app:bga_npl_placeholderDrawable="@mipmap/bga_pp_ic_holder_light"
+            app:bga_npl_showAsLargeWhenOnlyOne="true" />
+
+</LinearLayout>

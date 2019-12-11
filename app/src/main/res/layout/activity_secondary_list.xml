@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.androidlmy.headcustomview.HeadCustomView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.example.lmy.customview.SecondaryList.ExpandableListViewForScrollView
+            android:id="@+id/elv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:divider="@null"
+            android:groupIndicator="@null"
+            android:listSelector="#ffffff"
+            android:scrollbars="none"
+            android:visibility="visible" />
+    </ScrollView>
+</LinearLayout>
+
