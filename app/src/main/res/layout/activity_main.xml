@@ -93,7 +93,6 @@
                 android:text="上下左右滑动View" />
 
 
-
             <Button
                 android:id="@+id/updata"
                 android:layout_width="match_parent"
@@ -127,6 +126,21 @@
                 android:text="炫酷Toast" />
 
 
+            <Button
+                android:id="@+id/donghua"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@color/colorPrimaryDarkTrans"
+                android:text="转场动画" />
+
+            <Button
+                android:id="@+id/banner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@color/colorPrimaryDarkTrans"
+                android:text="banner" />
 
         </LinearLayout>
 

@@ -1,9 +1,16 @@
 package com.example.lmy.customview.Activity;
 
+import android.annotation.TargetApi;
+import android.app.SharedElementCallback;
 import android.content.Context;
+import android.graphics.Matrix;
+import android.graphics.RectF;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
+import android.os.Build;
 import android.os.Bundle;
+import android.os.Parcelable;
+import android.view.View;
 import android.widget.ImageView;
 
 import com.example.lmy.customview.R;
@@ -23,6 +30,9 @@ public class StartLaunchActivity extends WelcomeActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.welcome);
         AdvertisingActivity.scaleType = ImageView.ScaleType.CENTER_CROP;
+        setExitSharedElementCallback(new TransitionCallBack());
+
+
     }
 
     @Override
@@ -68,7 +78,15 @@ public class StartLaunchActivity extends WelcomeActivity {
         }
         return false;
     }
+    @TargetApi(Build.VERSION_CODES.LOLLIPOP)
+    public class TransitionCallBack extends SharedElementCallback {
 
+        @Override
+        public Parcelable onCaptureSharedElementSnapshot(View sharedElement, Matrix viewToGlobalMatrix, RectF screenBounds) {
+            sharedElement.setAlpha(1);
+            return super.onCaptureSharedElementSnapshot(sharedElement, viewToGlobalMatrix, screenBounds);
+        }
+    }
 
 }
 

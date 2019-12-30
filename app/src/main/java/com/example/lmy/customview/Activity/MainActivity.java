@@ -14,9 +14,11 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 
 import com.androidlmy.headcustomview.HeadCustomView;
+import com.example.lmy.customview.CuttoAnimation.AnimationActivity;
 import com.example.lmy.customview.LoadToast.LoadToastActivity;
 import com.example.lmy.customview.Utils.LogUtil;
 import com.example.lmy.customview.Utils.PermissionUtils;
+import com.example.lmy.customview.banner.BannerActivity;
 import com.example.lmy.customview.takephoto.TakePhotoMainActivity;
 import com.example.lmy.customview.CustomView.CustomviewActivity;
 import com.example.lmy.customview.CustomView.MyDialog;
@@ -32,13 +34,11 @@ import com.example.lmy.customview.base.BaseActivity;
 import com.example.lmy.customview.toast.ToastKuActivity;
 import com.example.lmy.customview.updaapp.UpDataActivity;
 
-import java.io.File;
 import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
-import pub.devrel.easypermissions.AfterPermissionGranted;
 import pub.devrel.easypermissions.AppSettingsDialog;
 import pub.devrel.easypermissions.EasyPermissions;
 
@@ -129,7 +129,7 @@ public class MainActivity extends BaseActivity implements EasyPermissions.Permis
             R.id.secondarylist_bt, R.id.check_recyclerview,
             R.id.viewpager_fragment, R.id.bt_excel,
             R.id.updata, R.id.webview, R.id.laodtoase,
-            R.id.toast
+            R.id.toast,R.id.donghua,R.id.banner
 
     })
     public void onViewClicked(View view) {
@@ -175,6 +175,13 @@ public class MainActivity extends BaseActivity implements EasyPermissions.Permis
             case R.id.toast:
                 ToastKuActivity.show(this);
                 break;
+            case R.id.donghua:
+                AnimationActivity.show(this);
+                break;
+            case R.id.banner:
+                BannerActivity.show(this);
+                break;
+
         }
     }
 

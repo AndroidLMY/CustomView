@@ -11,6 +11,13 @@
 
     <color name="blue">#FF33A8FF</color>
 
+    <color name="zhongjian">#e64340</color>
+
+    <color name="transparent">#00000000</color>
+
+    <color name="xiashang">#09bb07</color>
+
+
 
     <color name="color_success">#00FF00</color>
     <color name="color_error">#FF0000</color>

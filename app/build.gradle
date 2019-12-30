@@ -90,4 +90,7 @@ dependencies {
 
     implementation 'com.sdsmdg.tastytoast:tastytoast:0.1.1'
 
+    implementation 'com.github.fazhongxu:LBannerView:v0.1.8'
+
+
 }

@@ -17,6 +17,7 @@ import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+
 /**
  * @功能: Tab+ViewPager布局
  * @Creat 2019/12/10 16:35
@@ -76,8 +77,6 @@ public class TabActivity extends BaseActivity implements OnClickHeadView {
         viewpager.setOffscreenPageLimit(3);
         //将TabLayout与ViewPager绑定在一起
         tab.setupWithViewPager(viewpager);
-
-
     }
 
     @Override
