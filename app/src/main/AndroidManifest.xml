@@ -29,7 +29,9 @@
         android:networkSecurityConfig="@xml/network_security_config"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".banner.BannerActivity"></activity>
+        <activity android:name=".RecyclerviewGroupDemo.RecyclerviewGroupActivity"></activity>
+        <activity android:name=".AddView.AddViewActivity" />
+        <activity android:name=".banner.BannerActivity" />
         <activity android:name=".CuttoAnimation.SharedActivity" />
         <activity android:name=".CuttoAnimation.AnimationActivity" />
         <activity android:name=".toast.ToastKuActivity" />

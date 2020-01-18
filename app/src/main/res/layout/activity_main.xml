@@ -142,6 +142,21 @@
                 android:background="@color/colorPrimaryDarkTrans"
                 android:text="banner" />
 
+            <Button
+                android:id="@+id/addview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@color/colorPrimaryDarkTrans"
+                android:text="动态添加EditTextView" />
+            <Button
+                android:id="@+id/recygroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@color/colorPrimaryDarkTrans"
+                android:text="使用第三方实现recyclerview分组效果" />
+
         </LinearLayout>
 
     </ScrollView>
