@@ -15,6 +15,7 @@ import androidx.annotation.NonNull;
 
 import com.androidlmy.headcustomview.HeadCustomView;
 import com.example.lmy.customview.AddView.AddViewActivity;
+import com.example.lmy.customview.Animation.AndroidAnimationActivity;
 import com.example.lmy.customview.CuttoAnimation.AnimationActivity;
 import com.example.lmy.customview.LoadToast.LoadToastActivity;
 import com.example.lmy.customview.RecyclerviewGroupDemo.RecyclerviewGroupActivity;
@@ -131,7 +132,8 @@ public class MainActivity extends BaseActivity implements EasyPermissions.Permis
             R.id.secondarylist_bt, R.id.check_recyclerview,
             R.id.viewpager_fragment, R.id.bt_excel,
             R.id.updata, R.id.webview, R.id.laodtoase,
-            R.id.toast, R.id.donghua, R.id.banner, R.id.addview, R.id.recygroup
+            R.id.toast, R.id.donghua, R.id.banner, R.id.addview, R.id.recygroup,
+            R.id.bt_donghua
 
     })
     public void onViewClicked(View view) {
@@ -189,8 +191,9 @@ public class MainActivity extends BaseActivity implements EasyPermissions.Permis
             case R.id.recygroup:
                 RecyclerviewGroupActivity.show(this);
                 break;
-
-
+            case R.id.bt_donghua:
+                AndroidAnimationActivity.show(this);
+                break;
         }
     }
 

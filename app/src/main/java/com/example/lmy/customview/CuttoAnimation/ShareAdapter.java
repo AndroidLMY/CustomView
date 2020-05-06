@@ -44,11 +44,11 @@ public class ShareAdapter extends RecyclerView.Adapter<ShareAdapter.ViewHolder> 
         holder.ivImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (android.os.Build.VERSION.SDK_INT > 20) {
-                    context.startActivity(new Intent(context, SharedElementsActivity2.class), ActivityOptions.makeSceneTransitionAnimation(context, null).toBundle());
-                } else {
-                    context.startActivity(new Intent(context, SharedElementsActivity2.class));
-                }
+//                if (android.os.Build.VERSION.SDK_INT > 20) {
+//                    context.startActivity(new Intent(context, SharedElementsActivity2.class), ActivityOptions.makeSceneTransitionAnimation(context, null).toBundle());
+//                } else {
+//                    context.startActivity(new Intent(context, SharedElementsActivity2.class));
+//                }
             }
         });
 

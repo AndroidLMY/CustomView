@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<translate xmlns:android="http://schemas.android.com/apk/res/android"
+    android:duration="2000"
+    android:interpolator="@android:anim/anticipate_overshoot_interpolator"
+    android:fromYDelta="0"
+    android:startOffset="100"
+
+    android:toYDelta="800" /><!--
+    android:fillAfter="true" //控件动画结束时是否保持动画最后的状态
+    android:fillBefore="true"//	控件动画结束时是否还原到开始动画前的状态
+    android:repeatMode=""//	重复类型有两个值，reverse表示倒序回放，restart表示从头播放
+    android:startOffset="100"//调用start函数之后等待开始运行的时间，单位为毫秒-->
+    <!--
+
+    注①： 数值、百分数、百分数p，譬如50表示以当前View左上角坐标加50px为初始点、
+    50%表示以当前View的左上角加上当前View宽高的50%做为初始点、50%p表示以当前View的左上角加上父控件宽高的50%做为初始点
+    -->

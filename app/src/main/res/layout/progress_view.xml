@@ -38,7 +38,7 @@
                 android:layout_width="30dp"
                 android:layout_height="15dp"
                 android:layout_gravity="center"
-                android:src="@drawable/xiaohuojian" />
+                android:src="@drawable/xiaohuojian_01" />
         </LinearLayout>
 
 

@@ -157,6 +157,14 @@
                 android:background="@color/colorPrimaryDarkTrans"
                 android:text="使用第三方实现recyclerview分组效果" />
 
+            <Button
+                android:id="@+id/bt_donghua"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@color/colorPrimaryDarkTrans"
+                android:text="属性动画" />
+
         </LinearLayout>
 
     </ScrollView>

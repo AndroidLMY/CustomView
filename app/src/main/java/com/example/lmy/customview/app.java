@@ -33,7 +33,6 @@ public class app extends Application {
         initException();//全局异常捕获
         initLiveEventBus();//初始化LiveEventBus
         QbSdk.initX5Environment(this, null);//初始化x5浏览器
-
     }
 
 
