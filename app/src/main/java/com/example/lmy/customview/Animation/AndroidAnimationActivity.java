@@ -5,7 +5,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.LinearLayout;
 
+import com.ethanhua.skeleton.Skeleton;
+import com.ethanhua.skeleton.SkeletonScreen;
 import com.example.lmy.customview.R;
 import com.example.lmy.customview.base.BaseActivity;
 
@@ -23,6 +26,8 @@ public class AndroidAnimationActivity extends BaseActivity {
     Button btShuxing;
     @BindView(R.id.bt_lottie)
     Button btLottie;
+    @BindView(R.id.ll_all)
+    LinearLayout llAll;
 
     public static void show(Context context) {
         context.startActivity(new Intent(context, AndroidAnimationActivity.class));
@@ -33,6 +38,33 @@ public class AndroidAnimationActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_android_animation);
         ButterKnife.bind(this);
+
+
+        final SkeletonScreen skeletonScreen = Skeleton.bind(llAll)
+                .shimmer(true)//是否开启动画
+                .angle(30)//shimmer的倾斜角度
+//          .color(R.color.colorAccent)//shimmer的颜色
+                .duration(1200)//动画时间，以毫秒为单位
+                .load(R.layout.item_jiazai)//骨架屏UI
+                .show(); //default count is 10
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    Thread.sleep(2000);
+                    runOnUiThread(new Runnable() {
+                        @Override
+                        public void run() {
+                            skeletonScreen.hide();
+                        }
+                    });
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+
+            }
+        }).start();
+
     }
 
 

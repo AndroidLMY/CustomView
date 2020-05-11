@@ -95,6 +95,9 @@ dependencies {
     //加载AE的动画效果 用json的加载形式
     implementation 'com.airbnb.android:lottie:3.4.0'
 
+    //骨架效果的依赖
+    implementation 'com.ethanhua:skeleton:1.1.2'
+    implementation 'io.supercharge:shimmerlayout:2.1.0'
 
 
 }

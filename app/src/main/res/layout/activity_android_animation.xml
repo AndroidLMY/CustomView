@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_all"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -12,26 +13,32 @@
         android:id="@+id/bt_shitu"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/white"
         android:text="视图动画" />
 
     <Button
         android:id="@+id/bt_zhen"
         android:layout_width="match_parent"
+
         android:layout_height="wrap_content"
+        android:background="@color/white"
         android:text="帧动画" />
 
     <Button
         android:id="@+id/bt_shuxing"
         android:layout_width="match_parent"
+
         android:layout_height="wrap_content"
+        android:background="@color/white"
         android:text="属性动画" />
 
     <Button
         android:id="@+id/bt_lottie"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Lottie动画框架" />
 
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:text="Lottie动画框架" />
 
 
 </LinearLayout>
