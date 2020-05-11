@@ -92,6 +92,9 @@ dependencies {
 
     implementation 'com.github.fazhongxu:LBannerView:v0.1.8'
     implementation 'com.truizlop.sectionedrecyclerview:library:1.2.0'
+    //加载AE的动画效果 用json的加载形式
+    implementation 'com.airbnb.android:lottie:3.4.0'
+
 
 
 }

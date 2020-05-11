@@ -21,6 +21,8 @@ public class AndroidAnimationActivity extends BaseActivity {
     Button btZhen;
     @BindView(R.id.bt_shuxing)
     Button btShuxing;
+    @BindView(R.id.bt_lottie)
+    Button btLottie;
 
     public static void show(Context context) {
         context.startActivity(new Intent(context, AndroidAnimationActivity.class));
@@ -34,7 +36,7 @@ public class AndroidAnimationActivity extends BaseActivity {
     }
 
 
-    @OnClick({R.id.bt_shitu, R.id.bt_zhen, R.id.bt_shuxing})
+    @OnClick({R.id.bt_shitu, R.id.bt_zhen, R.id.bt_shuxing, R.id.bt_lottie})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.bt_shitu:
@@ -45,7 +47,11 @@ public class AndroidAnimationActivity extends BaseActivity {
                 break;
             case R.id.bt_shuxing:
                 ShuXingAnimActivity.show(this);
-
+                break;
+            case R.id.bt_lottie:
+                LottieAnimActivity.show(this);
+                break;
+            default:
                 break;
         }
     }

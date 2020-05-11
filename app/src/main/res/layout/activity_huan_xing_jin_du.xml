@@ -20,7 +20,7 @@
         android:layout_marginTop="200dp"
         android:visibility="visible"
         app:antiAlias="true"
-        app:arcColors="@color/colorAccent"
+        app:arcColors="@color/blue"
         app:arcWidth="2dp"
         app:bgArcColor="#EBEBEB"
         app:bgArcWidth="2dp"

@@ -1,6 +1,7 @@
 package com.example.lmy.customview.Animation;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Context;
 import android.content.Intent;
@@ -25,6 +26,7 @@ public class DrawableAnimActivity extends BaseActivity {
     ImageView ivDonghua;
     @BindView(R.id.bt_end)
     Button btEnd;
+    private RecyclerView recyclerView;
 
     public static void show(Context context) {
         context.startActivity(new Intent(context, DrawableAnimActivity.class));

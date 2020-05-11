@@ -132,9 +132,9 @@ public class CircleProgress extends View {
         int gradientArcColors = typedArray.getResourceId(R.styleable.CircleProgressBar_arcColors, 0);
         if (gradientArcColors != 0) {
             try {
-                int[] gradientColors = getResources().getIntArray(gradientArcColors);
+                int[] gradientColors = mContext.getResources().getIntArray(gradientArcColors);
                 if (gradientColors.length == 0) {//如果渐变色为数组为0，则尝试以单色读取色值
-                    int color = getResources().getColor(gradientArcColors);
+                    int color =  mContext.getResources().getColor(gradientArcColors);
                     mGradientColors = new int[2];
                     mGradientColors[0] = color;
                     mGradientColors[1] = color;
