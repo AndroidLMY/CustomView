@@ -98,6 +98,8 @@ dependencies {
     //骨架效果的依赖
     implementation 'com.ethanhua:skeleton:1.1.2'
     implementation 'io.supercharge:shimmerlayout:2.1.0'
+    //微信使用的mvvk框架用于替代原生的Sp存储
+    implementation 'com.tencent:mmkv-static:1.1.1'
 
 
 }

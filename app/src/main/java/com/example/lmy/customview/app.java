@@ -4,6 +4,7 @@ import android.app.Application;
 import android.content.Context;
 import android.text.TextUtils;
 
+import com.example.lmy.customview.MMKV.MmkvUtils;
 import com.example.lmy.customview.Utils.CrashHandler;
 import com.example.lmy.customview.Utils.LogUtil;
 import com.jeremyliao.liveeventbus.LiveEventBus;
@@ -28,6 +29,7 @@ public class app extends Application {
     public void onCreate() {
         super.onCreate();
         mContext = getApplicationContext();
+        MmkvUtils.getInstance().init(mContext);
         initLogInterceptor();//Log配置
         initLitePal();//初始化LitePal
         initException();//全局异常捕获

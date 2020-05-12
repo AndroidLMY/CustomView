@@ -149,6 +149,7 @@
                 android:layout_margin="5dp"
                 android:background="@color/colorPrimaryDarkTrans"
                 android:text="动态添加EditTextView" />
+
             <Button
                 android:id="@+id/recygroup"
                 android:layout_width="match_parent"
@@ -165,8 +166,13 @@
                 android:background="@color/colorPrimaryDarkTrans"
                 android:text="属性动画" />
 
+            <Button
+                android:id="@+id/bt_mmkv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@color/colorPrimaryDarkTrans"
+                android:text="MMKV的简单使用" />
         </LinearLayout>
-
     </ScrollView>
-
 </LinearLayout>

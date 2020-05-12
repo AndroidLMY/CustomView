@@ -18,6 +18,7 @@ import com.example.lmy.customview.AddView.AddViewActivity;
 import com.example.lmy.customview.Animation.AndroidAnimationActivity;
 import com.example.lmy.customview.CuttoAnimation.AnimationActivity;
 import com.example.lmy.customview.LoadToast.LoadToastActivity;
+import com.example.lmy.customview.MMKV.MMKVActivity;
 import com.example.lmy.customview.RecyclerviewGroupDemo.RecyclerviewGroupActivity;
 import com.example.lmy.customview.Utils.LogUtil;
 import com.example.lmy.customview.Utils.PermissionUtils;
@@ -36,6 +37,7 @@ import com.example.lmy.customview.WebView.WebActivity;
 import com.example.lmy.customview.base.BaseActivity;
 import com.example.lmy.customview.toast.ToastKuActivity;
 import com.example.lmy.customview.updaapp.UpDataActivity;
+import com.zyao89.view.zloading.ZLoadingView;
 
 import java.util.List;
 
@@ -133,7 +135,7 @@ public class MainActivity extends BaseActivity implements EasyPermissions.Permis
             R.id.viewpager_fragment, R.id.bt_excel,
             R.id.updata, R.id.webview, R.id.laodtoase,
             R.id.toast, R.id.donghua, R.id.banner, R.id.addview, R.id.recygroup,
-            R.id.bt_donghua
+            R.id.bt_donghua,R.id.bt_mmkv
 
     })
     public void onViewClicked(View view) {
@@ -193,6 +195,9 @@ public class MainActivity extends BaseActivity implements EasyPermissions.Permis
                 break;
             case R.id.bt_donghua:
                 AndroidAnimationActivity.show(this);
+                break;
+            case R.id.bt_mmkv:
+                MMKVActivity.show(this);
                 break;
         }
     }
