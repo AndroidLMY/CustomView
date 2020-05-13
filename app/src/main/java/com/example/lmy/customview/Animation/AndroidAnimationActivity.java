@@ -40,6 +40,9 @@ public class AndroidAnimationActivity extends BaseActivity {
         ButterKnife.bind(this);
 
 
+
+
+
         final SkeletonScreen skeletonScreen = Skeleton.bind(llAll)
                 .shimmer(true)//是否开启动画
                 .angle(30)//shimmer的倾斜角度
