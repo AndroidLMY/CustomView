@@ -173,6 +173,14 @@
                 android:layout_margin="5dp"
                 android:background="@color/colorPrimaryDarkTrans"
                 android:text="MMKV的简单使用" />
+
+            <Button
+                android:id="@+id/bt_md"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@color/colorPrimaryDarkTrans"
+                android:text="md风格的demo" />
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

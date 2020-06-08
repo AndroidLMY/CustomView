@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".DriftingBottleActivity">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:background="#1FA9FF">
+
+            <ImageView
+                android:id="@+id/iv_top_cloud1"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="48dp"
+                android:layout_marginTop="16dp"
+                android:src="@mipmap/ic_cloud"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/iv_top_sun"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_marginEnd="15dp"
+                android:src="@mipmap/ic_sun"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/iv_top_cloud2"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="30dp"
+                android:src="@mipmap/ic_cloud"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <ImageView
+                android:id="@+id/iv_top_cloud3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="70dp"
+                android:layout_marginBottom="80dp"
+                android:src="@mipmap/ic_cloud"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <ImageView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/ic_cloud_bg"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:background="#1368FF">
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="50dp"
+                android:layout_height="3dp"
+                android:layout_marginTop="70dp"
+                android:background="@drawable/bg_white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="100dp"
+                android:layout_height="3dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/bg_white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+            <RelativeLayout
+                android:id="@+id/rl_bottom_01"
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="40dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+
+                        android:id="@+id/iv_driftingbottle_01"
+                        android:layout_width="150dp"
+                        android:layout_height="70dp"
+                        android:layout_marginTop="15dp"
+                        android:src="@mipmap/ic_bottle_right" />
+                </FrameLayout>
+
+                <View
+                    android:id="@+id/view_shui"
+                    android:layout_width="200dp"
+                    android:layout_height="3dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/bg_white" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_bottom_02"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_marginEnd="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rl_bottom_01">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp">
+
+                    <ImageView
+                        android:id="@+id/iv_driftingbottle_02"
+
+                        android:layout_width="100dp"
+                        android:layout_height="70dp"
+                        android:layout_marginTop="25dp"
+                        android:src="@mipmap/ic_bottle_left" />
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="20dp"
+                        android:layout_height="3dp"
+                        android:background="@drawable/bg_white" />
+
+                    <View
+                        android:layout_width="100dp"
+                        android:layout_height="3dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/bg_white" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_bottom_03"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_marginStart="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rl_bottom_02">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/iv_driftingbottle_03"
+
+                        android:layout_width="100dp"
+                        android:layout_height="70dp"
+                        android:layout_marginTop="15dp"
+                        android:src="@mipmap/ic_bottle_left" />
+
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="100dp"
+                        android:layout_height="3dp"
+                        android:background="@drawable/bg_white" />
+
+                    <View
+                        android:layout_width="20dp"
+
+                        android:layout_height="3dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/bg_white" />
+
+                    <View
+                        android:layout_width="20dp"
+
+                        android:layout_height="3dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/bg_white" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/view_center"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_centerVertical="true" />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="117dp"
+        android:layout_above="@+id/view_center"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="30dp"
+        android:src="@mipmap/ic_coconuttree" />
+
+
+    <Button
+        android:id="@+id/bt_fishing"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/bg_piaoliuping"
+        android:text="捞一下"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00000000">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            />
+    </FrameLayout>
+</RelativeLayout>

@@ -68,7 +68,7 @@ public class AndroidAnimationActivity extends BaseActivity {
     }
 
 
-    @OnClick({R.id.bt_shitu, R.id.bt_zhen, R.id.bt_shuxing, R.id.bt_lottie})
+    @OnClick({R.id.bt_shitu, R.id.bt_zhen, R.id.bt_shuxing, R.id.bt_lottie,R.id.bt_piaoliuping})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.bt_shitu:
@@ -82,7 +82,14 @@ public class AndroidAnimationActivity extends BaseActivity {
                 break;
             case R.id.bt_lottie:
                 LottieAnimActivity.show(this);
+
                 break;
+
+            case R.id.bt_piaoliuping:
+                DriftingBottleActivity.show(this);
+                break;
+
+
             default:
                 break;
         }

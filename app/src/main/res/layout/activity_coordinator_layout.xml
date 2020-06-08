@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.example.lmy.customview.md.ObservableScrollView
+        android:id="@+id/sv_main_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="500dp"
+                    android:background="#b5b433"
+                    android:gravity="center"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_bg_demo"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="我是头部"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1500dp"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:text="我是内容"
+                android:textSize="22sp" />
+
+        </LinearLayout>
+    </com.example.lmy.customview.md.ObservableScrollView>
+    <include layout="@layout/include_header_itl" />
+</RelativeLayout>

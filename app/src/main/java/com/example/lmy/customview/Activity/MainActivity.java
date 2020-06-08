@@ -23,6 +23,7 @@ import com.example.lmy.customview.RecyclerviewGroupDemo.RecyclerviewGroupActivit
 import com.example.lmy.customview.Utils.LogUtil;
 import com.example.lmy.customview.Utils.PermissionUtils;
 import com.example.lmy.customview.banner.BannerActivity;
+import com.example.lmy.customview.md.MDActivity;
 import com.example.lmy.customview.takephoto.TakePhotoMainActivity;
 import com.example.lmy.customview.CustomView.CustomviewActivity;
 import com.example.lmy.customview.CustomView.MyDialog;
@@ -135,7 +136,7 @@ public class MainActivity extends BaseActivity implements EasyPermissions.Permis
             R.id.viewpager_fragment, R.id.bt_excel,
             R.id.updata, R.id.webview, R.id.laodtoase,
             R.id.toast, R.id.donghua, R.id.banner, R.id.addview, R.id.recygroup,
-            R.id.bt_donghua,R.id.bt_mmkv
+            R.id.bt_donghua, R.id.bt_mmkv, R.id.bt_md
 
     })
     public void onViewClicked(View view) {
@@ -199,6 +200,12 @@ public class MainActivity extends BaseActivity implements EasyPermissions.Permis
             case R.id.bt_mmkv:
                 MMKVActivity.show(this);
                 break;
+
+            case R.id.bt_md:
+                MDActivity.show(this);
+                break;
+
+
         }
     }
 
