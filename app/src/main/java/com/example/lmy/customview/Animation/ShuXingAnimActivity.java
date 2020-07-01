@@ -34,6 +34,8 @@ public class ShuXingAnimActivity extends BaseActivity {
     ImageView ivImage;
     @BindView(R.id.tv_content)
     TextView tvContent;
+    @BindView(R.id.tv_donghua)
+    ScrollingDigitalAnimation tvDonghua;
 
     public static void show(Context context) {
         context.startActivity(new Intent(context, ShuXingAnimActivity.class));
@@ -44,6 +46,11 @@ public class ShuXingAnimActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_shu_xing_anim);
         ButterKnife.bind(this);
+        /**
+         * 设置金钱的动画
+         * */
+        tvDonghua.setPrefixString("￥");
+        tvDonghua.setNumberString("9", "999999999"); //设置起始于结束的数字
     }
 
     @OnClick({R.id.bt_01, R.id.bt_02, R.id.bt_03, R.id.iv_image})
@@ -82,7 +89,6 @@ public class ShuXingAnimActivity extends BaseActivity {
                 anim8.setDuration(3000);
 
 
-
                 //将TextView在垂直方向上放大3倍再还原
                 ObjectAnimator anim4 = ObjectAnimator.ofFloat(ivImage, "scaleY", 1f, 3f, 1f);
                 anim4.setDuration(3000);
@@ -96,7 +102,7 @@ public class ShuXingAnimActivity extends BaseActivity {
                         curTranslationY, -500f, curTranslationY);
                 anim6.setDuration(3000);
                 AnimatorSet animSet = new AnimatorSet();
-                animSet.playSequentially(anim1, anim2,anim3, anim4, anim8, anim5, anim6);
+                animSet.playSequentially(anim1, anim2, anim3, anim4, anim8, anim5, anim6);
                 animSet.start();
 
 

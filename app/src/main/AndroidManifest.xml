@@ -43,6 +43,13 @@
 
         <activity android:name=".Animation.DriftingBottleActivity" >
 
+
+
+        </activity>
+
+
+        <activity android:name=".Animation.ShuXingAnimActivity" >
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -50,9 +57,6 @@
             </intent-filter>
 
         </activity>
-
-
-        <activity android:name=".Animation.ShuXingAnimActivity" />
         <activity android:name=".Animation.ShiTuAnimActivity" />
         <activity android:name=".Animation.DrawableAnimActivity" />
         <activity android:name=".Animation.AndroidAnimationActivity" />
